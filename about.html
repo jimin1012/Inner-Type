@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소개 | InnerType</title>
+    <meta name="description" content="InnerType 소개. 서비스 목적, 운영 원칙, 콘텐츠 기준을 안내합니다." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://example.com/about.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="소개" />
+    <meta property="og:description" content="InnerType 서비스 소개" />
+    <meta property="og:url" content="https://example.com/about.html" />
+    <meta property="og:site_name" content="InnerType" />
+    <meta property="og:image" content="https://example.com/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://example.com/og-cover.svg" />
+    <meta name="theme-color" content="#16a34a" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="hero compact" id="top">
+      <div class="hero-content" data-reveal>
+        <div class="breadcrumb"><a href="/">홈</a> / 소개</div>
+        <h1>InnerType 소개</h1>
+        <p>InnerType는 일상에서 바로 활용할 수 있는 성향 테스트를 제공합니다.</p>
+      </div>
+    </header>
+
+    <nav class="sticky-nav" aria-label="페이지 네비게이션">
+      <a href="#mission">목표</a>
+      <a href="#principles">원칙</a>
+      <a href="#contact">문의</a>
+    </nav>
+
+    <main>
+      <section class="section" id="mission" data-reveal>
+        <h2>우리의 목표</h2>
+        <p>누구나 쉽게 자신의 성향을 이해하고, 더 나은 선택을 할 수 있도록 돕습니다.</p>
+        <div class="guide-grid">
+          <div>
+            <h3>자기 이해</h3>
+            <p>짧은 질문으로 핵심 성향을 파악할 수 있도록 구성했습니다.</p>
+          </div>
+          <div>
+            <h3>실행 중심</h3>
+            <p>결과가 실천으로 연결될 수 있는 가이드를 제공합니다.</p>
+          </div>
+          <div>
+            <h3>신뢰성</h3>
+            <p>과장 없이 균형 잡힌 설명을 제공하는 것을 원칙으로 합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="principles" data-reveal>
+        <h2>운영 원칙</h2>
+        <p>콘텐츠 품질과 사용자 경험을 동시에 지키는 것을 최우선으로 합니다.</p>
+        <div class="guide-grid">
+          <div>
+            <h3>콘텐츠 품질</h3>
+            <p>중복 없는 설명과 최신 정보를 유지하려 노력합니다.</p>
+          </div>
+          <div>
+            <h3>개인정보 보호</h3>
+            <p>응답은 브라우저 내에서만 처리하며 외부 저장을 하지 않습니다.</p>
+          </div>
+          <div>
+            <h3>투명한 운영</h3>
+            <p>정책 변경이나 서비스 업데이트는 공지합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" data-reveal>
+        <h2>문의</h2>
+        <p>제휴나 콘텐츠 관련 문의는 아래 폼으로 접수해주세요.</p>
+        <form class="contact-form" action="https://formspree.io/f/xlgldljw" method="POST">
+          <label>
+            이름
+            <input type="text" name="name" placeholder="이름" required />
+          </label>
+          <label>
+            이메일
+            <input type="email" name="email" placeholder="이메일" required />
+          </label>
+          <label>
+            메시지
+            <textarea name="message" rows="4" placeholder="문의 내용을 입력하세요" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">보내기</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" data-reveal>
+      <div>
+        <h3>InnerType</h3>
+        <p>성향 기반 콘텐츠 허브 · 2026</p>
+      </div>
+      <div>
+        <h4>정책 안내</h4>
+        <ul>
+          <li><a href="/privacy.html">개인정보처리방침</a></li>
+          <li><a href="/terms.html">이용약관</a></li>
+          <li><a href="/about.html">소개</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
