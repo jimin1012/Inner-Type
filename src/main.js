@@ -237,7 +237,14 @@ forms.forEach((form) => {
 
     resultBox.innerHTML = renderResult(profile, score, maxScore);
     resultBox.classList.add('show');
-    resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });\n\n    const shareButton = resultBox.querySelector('[data-kakao-share]');\n    if (shareButton) {\n      shareButton.addEventListener('click', () => {\n        shareOnKakao(profile.title, profile.summary);\n      });\n    }
+    resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    const shareButton = resultBox.querySelector('[data-kakao-share]');
+    if (shareButton) {
+      shareButton.addEventListener('click', () => {
+        shareOnKakao(profile.title, profile.summary);
+      });
+    }
   });
 
   form.addEventListener('reset', () => {
