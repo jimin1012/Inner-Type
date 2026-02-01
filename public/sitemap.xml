@@ -1,55 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://inner-type.com/</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/mbti-job.html</loc>
+    <loc>https://inner-type.com/mbti-job.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/love-style.html</loc>
+    <loc>https://inner-type.com/love-style.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/work-stress.html</loc>
+    <loc>https://inner-type.com/work-stress.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/invest-style.html</loc>
+    <loc>https://inner-type.com/invest-style.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/travel-style.html</loc>
+    <loc>https://inner-type.com/travel-style.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/privacy.html</loc>
+    <loc>https://inner-type.com/privacy.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/terms.html</loc>
+    <loc>https://inner-type.com/terms.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/about.html</loc>
+    <loc>https://inner-type.com/about.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
