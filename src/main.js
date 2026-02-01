@@ -199,6 +199,9 @@ const renderResult = (profile, score, maxScore) => {
         <ul>${tips}</ul>
         <p class="notice">이 결과는 참고용이며 중요한 결정은 전문가와 상담하세요.</p>
       </div>
+      <div class="result-actions">
+        <button class="btn primary" type="button" data-kakao-share>카카오톡 공유</button>
+      </div>
     </div>
   `;
 };
