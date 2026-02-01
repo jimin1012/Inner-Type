@@ -1,5 +1,50 @@
 ﻿import './style.css';
 
+const KAKAO_APP_KEY = 'c0d1fb36e2297d781735365776377da0';
+
+const initKakao = () => {
+  if (window.Kakao && !window.Kakao.isInitialized()) {
+    window.Kakao.init(KAKAO_APP_KEY);
+  }
+};
+
+const shareOnKakao = (title, description) => {
+  if (!window.Kakao) {
+    window.alert('카카오 SDK가 아직 로드되지 않았습니다.');
+    return;
+  }
+  initKakao();
+  if (!window.Kakao.Share) {
+    window.alert('카카오 공유 기능을 사용할 수 없습니다.');
+    return;
+  }
+
+  const shareUrl = window.location.href.split('#')[0];
+  const imageUrl = `${window.location.origin}/og-cover.svg`;
+
+  window.Kakao.Share.sendDefault({
+    objectType: 'feed',
+    content: {
+      title,
+      description,
+      imageUrl,
+      link: {
+        mobileWebUrl: shareUrl,
+        webUrl: shareUrl
+      }
+    },
+    buttons: [
+      {
+        title: '테스트 보기',
+        link: {
+          mobileWebUrl: shareUrl,
+          webUrl: shareUrl
+        }
+      }
+    ]
+  });
+};
+
 const profiles = {
   mbti: [
     {
@@ -192,7 +237,7 @@ forms.forEach((form) => {
 
     resultBox.innerHTML = renderResult(profile, score, maxScore);
     resultBox.classList.add('show');
-    resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });\n\n    const shareButton = resultBox.querySelector('[data-kakao-share]');\n    if (shareButton) {\n      shareButton.addEventListener('click', () => {\n        shareOnKakao(profile.title, profile.summary);\n      });\n    }
   });
 
   form.addEventListener('reset', () => {
@@ -244,3 +289,6 @@ sections.forEach((section) => {
     navObserver.observe(section);
   }
 });
+
+
+

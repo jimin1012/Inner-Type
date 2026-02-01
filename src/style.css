@@ -416,6 +416,12 @@ legend {
   max-width: 420px;
 }
 
+.result-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
 .result-trait {
   display: grid;
   gap: 6px;
