@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#e85c91" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="480" height="480" rx="120" fill="#ffd6e3" />
+  <g filter="url(#glow)">
+    
+    <circle cx="240" cy="260" r="110" fill="#fff"/>
+    <rect x="200" y="70" width="40" height="120" rx="20" fill="#fff"/>
+    <rect x="240" y="70" width="40" height="120" rx="20" fill="#fff"/>
+    
+    <circle cx="200" cy="250" r="10" fill="#222" />
+    <circle cx="280" cy="250" r="10" fill="#222" />
+    <path d="M210 280 Q240 300 270 280" stroke="#222" stroke-width="10" fill="none" stroke-linecap="round"/>
+    
+    
+  </g>
+</svg>

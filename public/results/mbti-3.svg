@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#2f7f6d" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="480" height="480" rx="120" fill="#9bd0bc" />
+  <g filter="url(#glow)">
+    
+    <circle cx="240" cy="250" r="120" fill="#fff"/>
+    <path d="M150 170 L190 110 L220 180 Z" fill="#fff"/>
+    <path d="M330 170 L290 110 L260 180 Z" fill="#fff"/>
+    
+    <circle cx="200" cy="240" r="10" fill="#222" />
+    <circle cx="280" cy="240" r="10" fill="#222" />
+    <path d="M210 270 Q240 290 270 270" stroke="#222" stroke-width="10" fill="none" stroke-linecap="round"/>
+    
+    <path d="M220 300 Q240 320 260 300" stroke="#222" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+  </g>
+</svg>

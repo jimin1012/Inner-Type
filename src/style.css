@@ -390,6 +390,18 @@ legend {
   margin-bottom: 10px;
 }
 
+.result-avatar {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 6px;
+}
+
+.result-avatar img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
 .result-title {
   font-size: 1.6rem;
   font-weight: 800;
