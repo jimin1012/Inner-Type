@@ -19,8 +19,9 @@ const shareOnKakao = (title, description) => {
     return;
   }
 
-  const shareUrl = window.location.href.split('#')[0];
-  const imageUrl = `${window.location.origin}/og-cover.svg`;
+  const baseUrl = 'https://inner-type.com';
+  const shareUrl = `${baseUrl}${window.location.pathname}`;
+  const imageUrl = `${baseUrl}/og-cover.png`;
 
   window.Kakao.Share.sendDefault({
     objectType: 'feed',
@@ -35,7 +36,7 @@ const shareOnKakao = (title, description) => {
     },
     buttons: [
       {
-        title: '테스트 보기',
+        title: '테스트 보러가기',
         link: {
           mobileWebUrl: shareUrl,
           webUrl: shareUrl
@@ -43,6 +44,16 @@ const shareOnKakao = (title, description) => {
       }
     ]
   });
+};
+
+const copyShareLink = async () => {
+  const shareUrl = `https://inner-type.com${window.location.pathname}`;
+  try {
+    await navigator.clipboard.writeText(shareUrl);
+    window.alert('링크가 복사되었습니다.');
+  } catch (error) {
+    window.prompt('아래 링크를 복사해서 공유하세요.', shareUrl);
+  }
 };
 
 const profiles = {
@@ -201,6 +212,7 @@ const renderResult = (profile, score, maxScore) => {
       </div>
       <div class="result-actions">
         <button class="btn primary" type="button" data-kakao-share>카카오톡 공유</button>
+        <button class="btn ghost" type="button" data-copy-link>링크 복사</button>
       </div>
     </div>
   `;
@@ -246,6 +258,13 @@ forms.forEach((form) => {
     if (shareButton) {
       shareButton.addEventListener('click', () => {
         shareOnKakao(profile.title, profile.summary);
+      });
+    }
+
+    const copyButton = resultBox.querySelector('[data-copy-link]');
+    if (copyButton) {
+      copyButton.addEventListener('click', () => {
+        copyShareLink();
       });
     }
   });
